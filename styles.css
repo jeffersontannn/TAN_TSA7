@@ -1,120 +1,104 @@
+/* Base styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    box-sizing: border-box;
 }
 
 header {
     background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
+    color: #fff;
 }
 
-.logo {
-    font-size: 1.5em;
+nav .logo {
+    font-size: 1.5rem;
 }
 
-.nav-links {
+nav .nav-links {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
 }
 
-.nav-links li {
-    margin-left: 20px;
+nav .nav-links li {
+    margin-left: 1rem;
 }
 
-.nav-links a {
+nav .nav-links a {
     color: #fff;
     text-decoration: none;
-    font-size: 1em;
 }
 
-.menu-toggle {
+nav .menu-toggle {
     display: none;
-    font-size: 1.5em;
-}
-
-main {
-    padding: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .home-section {
     text-align: center;
-    background-color: #fff;
-    padding: 50px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
 }
 
 .home-section img {
-    width: 100%;
-    max-width: 600px;
+    max-width: 100%;
     height: auto;
-    border-radius: 10px;
 }
 
 .characters-section {
-    background-color: #fff;
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.character {
+    padding: 2rem;
     text-align: center;
-    margin-bottom: 20px;
 }
 
-.character img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
+.characters-section .character {
+    margin-bottom: 2rem;
+}
+
+.characters-section img {
+    max-width: 100%;
+    height: auto;
 }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    padding: 1rem;
 }
 
-/* Responsive Design */
+/* Responsive styles */
 @media (max-width: 768px) {
-    .nav-links {
+    nav .nav-links {
         display: none;
         flex-direction: column;
         width: 100%;
         text-align: center;
     }
 
-    .nav-links li {
-        margin: 10px 0;
+    nav .nav-links.active {
+        display: flex;
     }
 
-    .menu-toggle {
+    nav .menu-toggle {
         display: block;
     }
 }
 
 @media (max-width: 480px) {
-    .home-section, .characters-section {
-        padding: 20px;
+    nav .logo {
+        font-size: 1.2rem;
     }
 
-    .character img {
-        width: 100px;
-        height: 100px;
+    .home-section h1 {
+        font-size: 1.5rem;
     }
-}
+
+    .characters-section h2 {
+        font-size: 1.
