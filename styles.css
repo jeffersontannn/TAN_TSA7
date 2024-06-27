@@ -36,6 +36,9 @@ nav {
 }
 
 .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     padding: 2rem;
 }
@@ -43,7 +46,6 @@ nav {
 .hero-section img {
     width: 300px; 
     height: auto;  
-    photo-align: center;
     border: 2px solid #000;
 }
 
@@ -53,6 +55,8 @@ nav {
     display: inline-block;
     padding: 1rem;
     margin-top: 1rem; 
+    text-align: center;
+    width: 80%; 
 }
 
 .about-section, .characters-section, .gallery-section, .contact-section {
@@ -90,7 +94,7 @@ footer {
     margin-top: 2rem;
 }
 
-
+/* Responsive styles */
 @media (max-width: 768px) {
     .nav-links {
         flex-direction: column;
