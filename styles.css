@@ -79,12 +79,17 @@ nav {
     height: 200px; 
 }
 
-.gallery-images img {
-    width: 30%;
-    margin: 1.5%;
-    border: 2px solid #000;
+.gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.gallery-image {
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    height: 200px; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 footer {
