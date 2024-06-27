@@ -59,12 +59,34 @@ p {
     text-align: center;
 }
 
-.character-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.container {
+    text-align: center;
+    margin-top: 50px;
 }
 
+.spiderman-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.title {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: gray;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: gray;
+    display: inline-block;
+    padding: 10px 20px;
+}
 .character {
     width: 200px;
     text-align: center;
