@@ -1,41 +1,121 @@
-body, html {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 100%;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: red;
+}
+
+nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    font-family: Arial, sans-serif;
+    padding: 1rem;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .hero-section {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    padding: 2rem;
 }
 
-.hero-image {
-    max-width: 100%;
-    height: auto;
+.hero-section img {
+    width: 300px; 
+    height: auto;  
+    photo-align: center;
+    border: 2px solid #000;
 }
 
 .hero-text {
-    background-color: gray;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
+    margin-top: 1rem; 
 }
 
-.hero-text h1 {
-    margin: 0;
-    font-size: 2em;
+.about-section, .characters-section, .gallery-section, .contact-section {
+    padding: 2rem;
+    text-align: center;
 }
 
-.hero-text p {
-    margin-top: 10px;
-    font-size: 1.2em;
+.character {
+    display: inline-block;
+    width: 200px;
+    margin: 1rem;
+}
+
+.character img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #000;
+    object-fit: cover;
+    height: 200px; 
+}
+
+.gallery-images img {
+    width: 30%;
+    margin: 1.5%;
+    border: 2px solid #000;
+    object-fit: cover;
+    height: 200px; 
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .characters-section h2, .gallery-section h2, .contact-section h2 {
+        font-size: 1.5rem;
+    }
 }
