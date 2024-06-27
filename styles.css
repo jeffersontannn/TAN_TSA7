@@ -1,3 +1,4 @@
+/* Base styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -41,9 +42,11 @@ nav {
 }
 
 .hero-section img {
-    width: 100%;
+    width: 50%;
     height: auto;
     border: 2px solid #000;
+    margin: 0 auto; /* Center the image */
+    display: block;
 }
 
 .hero-text {
@@ -51,7 +54,10 @@ nav {
     color: #fff;
     display: inline-block;
     padding: 1rem;
-    margin-top: -5rem;
+    margin-top: 1rem;
+    width: 80%; /* Adjust the width as needed */
+    margin: 1rem auto; /* Center the text */
+    text-align: center;
 }
 
 .about-section, .characters-section, .gallery-section, .contact-section {
@@ -63,14 +69,14 @@ nav {
     display: inline-block;
     width: 200px;
     margin: 1rem;
+    text-align: center;
 }
 
 .character img {
     width: 100%;
-    height: auto;
+    height: 200px;
     border: 2px solid #000;
     object-fit: cover;
-    height: 200px; 
 }
 
 .gallery-images img {
@@ -78,7 +84,7 @@ nav {
     margin: 1.5%;
     border: 2px solid #000;
     object-fit: cover;
-    height: 200px; 
+    height: 200px;
 }
 
 footer {
@@ -89,6 +95,7 @@ footer {
     margin-top: 2rem;
 }
 
+/* Responsive styles */
 @media (max-width: 768px) {
     .nav-links {
         flex-direction: column;
@@ -117,3 +124,4 @@ footer {
         font-size: 1.5rem;
     }
 }
+
