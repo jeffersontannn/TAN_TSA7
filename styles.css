@@ -38,7 +38,7 @@ nav {
 .hero-section {
     text-align: center;
     border: 2px solid black;
-    background-color: #ff0000; 
+    background-color: white; 
     padding: 2rem;
 }
 
@@ -61,12 +61,20 @@ nav {
     text-align: center;
 }
 
-.about-section, .characters-section, .contact-section {
+.characters-section, .contact-section {
     border: 2px solid black; 
     padding: 20px; 
-    background-color: #ff0000; 
+    background-color: white; 
     color: white; 
 }
+
+.about-section {
+    border: 2px solid black; 
+    padding: 20px; 
+    background-color: white; 
+    color: white; 
+}
+
 
 .character {
     display: inline-block;
