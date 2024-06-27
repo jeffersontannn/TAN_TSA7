@@ -39,7 +39,6 @@ nav {
 .hero-section {
     text-align: center;
     padding: 2rem;
-    position: relative;
 }
 
 .hero-section img {
@@ -53,12 +52,11 @@ nav {
     color: #fff;
     display: inline-block;
     padding: 1rem;
-    position: absolute;
-    bottom: 10%; /* Adjust this value to lower the text */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%; /* Adjust as needed */
+    margin-top: 1rem; /* Adjust the margin to fit better */
     text-align: center;
+    width: 80%; /* Adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-section, .characters-section, .gallery-section, .contact-section {
