@@ -1,109 +1,121 @@
+/* Base styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+header {
     background-color: red;
 }
 
-.navbar {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    padding: 10px;
+    padding: 1rem;
 }
 
-.navbar .logo img {
-    width: 50px;
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
 }
 
-.navbar .nav-links {
+.nav-links {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
 }
 
-.navbar .nav-links li {
-    margin: 0 10px;
+.nav-links li {
+    margin-left: 1rem;
 }
 
-.navbar .nav-links li a {
-    color: white;
+.nav-links a {
+    color: #fff;
     text-decoration: none;
-    font-size: 18px;
 }
 
 .hero-section {
-    position: relative;
     text-align: center;
-    color: white;
+    padding: 2rem;
 }
 
 .hero-section img {
     width: 100%;
     height: auto;
+    border: 2px solid #000;
 }
 
-.hero-section .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.hero-text {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
+    margin-top: -5rem;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
+.about-section, .characters-section, .gallery-section, .contact-section {
+    padding: 2rem;
+    text-align: center;
 }
 
-.content-section {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.character {
+    display: inline-block;
+    width: 200px;
+    margin: 1rem;
 }
 
-.section-header {
-    font-weight: bold;
-    font-size: 24px;
-    text-decoration: none;
-    color: #333;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-}
-
-.text-block {
-    margin-bottom: 20px;
-}
-
-.text-block h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.text-block p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.image-block img {
+.character img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border: 2px solid #000;
+    object-fit: cover;
+    height: 200px; /* Ensure all character images have the same height */
+}
+
+.gallery-images img {
+    width: 30%;
+    margin: 1.5%;
+    border: 2px solid #000;
+    object-fit: cover;
+    height: 200px; /* Ensure all gallery images have the same height */
 }
 
 footer {
     background-color: #333;
-    color: white;
+    color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .characters-section h2, .gallery-section h2, .contact-section h2 {
+        font-size: 1.5rem;
+    }
 }
