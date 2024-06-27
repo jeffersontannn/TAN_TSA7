@@ -15,29 +15,30 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    color: #fff;
 }
 
-nav .logo {
+.logo {
+    color: #fff;
     font-size: 1.5rem;
 }
 
-nav .nav-links {
+.nav-links {
     list-style: none;
     display: flex;
 }
 
-nav .nav-links li {
+.nav-links li {
     margin-left: 1rem;
 }
 
-nav .nav-links a {
+.nav-links a {
     color: #fff;
     text-decoration: none;
 }
 
-nav .menu-toggle {
+.menu-toggle {
     display: none;
+    color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -48,21 +49,23 @@ nav .menu-toggle {
 }
 
 .home-section img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
 .characters-section {
-    padding: 2rem;
     text-align: center;
+    padding: 2rem;
 }
 
-.characters-section .character {
-    margin-bottom: 2rem;
+.character {
+    display: inline-block;
+    width: 200px;
+    margin: 1rem;
 }
 
-.characters-section img {
-    max-width: 100%;
+.character img {
+    width: 100%;
     height: auto;
 }
 
@@ -71,34 +74,4 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    nav .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-    }
-
-    nav .nav-links.active {
-        display: flex;
-    }
-
-    nav .menu-toggle {
-        display: block;
-    }
-}
-
-@media (max-width: 480px) {
-    nav .logo {
-        font-size: 1.2rem;
-    }
-
-    .home-section h1 {
-        font-size: 1.5rem;
-    }
-
-    .characters-section h2 {
-        font-size: 1.
+    margin-top: 2rem;
