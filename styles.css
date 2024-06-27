@@ -42,8 +42,8 @@ nav {
 }
 
 .hero-section img {
-    width: 50%; /* Adjust the width as needed */
-    height: auto;
+    width: 300px; /* Adjust the width as needed */
+    height: auto;  /* Maintain aspect ratio */
     border: 2px solid #000;
 }
 
@@ -52,7 +52,7 @@ nav {
     color: #fff;
     display: inline-block;
     padding: 1rem;
-    margin-top: -5rem;
+    margin-top: 1rem; /* Adjust the margin to fit better */
 }
 
 .about-section, .characters-section, .gallery-section, .contact-section {
