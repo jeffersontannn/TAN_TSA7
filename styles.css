@@ -68,7 +68,7 @@ nav {
 .about-section, .characters-section, .contact-section {
     border: 2px solid black; 
     padding: 20px; 
-    background-color: #ff0000; 
+    background-color: rgba(255, 255, 255, 0.8); 
     color: white;
     text-align: center; 
 }
